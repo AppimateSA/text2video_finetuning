@@ -1,0 +1,7 @@
+#the model overfits at 12000 steps still to see the results
+#the model evaulation video is very small to-do chnage the inference frame to more than 16 frames
+#the model batch size is static, train all attention layer or all the layers 
+#the repo is archived now use recent alibaba training script to run the experiments 
+#check in inference how are resutls for the experiments with txt in training data 
+
+done!!!!1

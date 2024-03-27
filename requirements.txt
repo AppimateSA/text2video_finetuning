@@ -1,0 +1,24 @@
+# accelerate==0.19
+accelerate>=0.20.3
+torch
+torchvision
+torchaudio
+# git+https://github.com/huggingface/diffusers.git
+git+https://github.com/cloneofsimo/lora.git
+git+https://github.com/microsoft/LoRA
+diffusers==0.20.2
+transformers
+einops
+decord
+tqdm
+safetensors
+omegaconf
+opencv-python
+pydantic
+
+wandb
+onnx
+onnxscript
+compel
+triton
+# xformers
