@@ -1,6 +1,6 @@
 
 
-pretrained_model_path: "/home/luthando/Desktop/text2video_finetuning/models/model_scope_diffusers/text-to-video-ms-1.7b"
+pretrained_model_path: "/home/luthando/Desktop/text2video_finetuning/models/model_scope_diffusers"
 output_dir: "./outputs"
 train_text_encoder: False
 #resume_from_checkpoint: None
