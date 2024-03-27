@@ -1,9 +1,6 @@
 
 
-# # pretrained_model_path: "/content/text-to-video-ms-1.7b" #https://huggingface.co/damo-vilab/text-to-video-ms-1.7b/tree/main
-# pretrained_model_path: "/home/luthando/.cache/models/text-to-video-ms-1.7b" #https://huggingface.co/damo-vilab/text-to-video-ms-1.7b/tree/main
-pretrained_model_path: "/home/luthando/Desktop/AutoVisual/text-to-video-ms-1.7b" #https://huggingface.co/damo-vilab/text-to-video-ms-1.7b/tree/main
-# output_dir: "/content/drive/MyDrive/Colab Notebooks/Supervised Learning/T2V/Text-To-Video-Finetuning/outputs"
+pretrained_model_path: "/home/luthando/Desktop/text2video_finetuning/models/model_scope_diffusers/text-to-video-ms-1.7b"
 output_dir: "./outputs"
 train_text_encoder: False
 #resume_from_checkpoint: None
@@ -11,10 +8,7 @@ dataset_types:
   - 'folder'
 
 train_data:
-  # #single_video_path: "/home/gaurav/Text-to-Video/Appimate/videos/video1.mp4"
   path: "/home/luthando/.cache/datasets/Appimate/T2V"
-  # path: "/content/train_all_mp4"
-  #json_path: "/home/gaurav/Text-to-Video/AutoVisual/Text-To-Video-Finetuning/Video-BLIP2-Preprocessor/train_data/secrets.json"
   preprocessed: True
   n_sample_frames: 2
   shuffle_frames: False

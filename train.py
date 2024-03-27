@@ -1023,7 +1023,7 @@ if __name__ == "__main__":
             print(e)
         if wandb.run is not None: # 🐝 Open your wandb run 
             wandb.init(
-                project="autovisual-t2v_stablediffusion",
+                project="text2video_finetuning",
                 name=f"experiment_{ args.experiment_num }",
                 job_type="train-job",
                 config=config,
