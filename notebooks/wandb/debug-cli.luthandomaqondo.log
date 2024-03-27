@@ -1,0 +1,77 @@
+2024-02-10 20:23:49 INFO Running runs: []
+2024-02-10 20:23:49 INFO Agent received command: run
+2024-02-10 20:23:49 INFO Agent starting run with config:
+	batch_size: 8
+	embed_dim: 1024
+	experiment_num: 1
+	num_heads: 16
+	num_layers: 4
+2024-02-10 20:23:49 INFO About to run command: /usr/bin/env python scripts/training.py --batch_size=8 --embed_dim=1024 --experiment_num=1 --num_heads=16 --num_layers=4
+2024-02-10 20:25:25 ERROR Traceback (most recent call last):
+  File "/Users/luthandomaqondo/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/luthandomaqondo/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 1065, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep luthando957/autovisual-dev-sweeps/34mung6u--count=10 not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/luthandomaqondo/miniconda3/lib/python3.11/site-packages/wandb/cli/cli.py", line 105, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/luthandomaqondo/miniconda3/lib/python3.11/site-packages/wandb/cli/cli.py", line 1731, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/Users/luthandomaqondo/miniconda3/lib/python3.11/site-packages/wandb/wandb_agent.py", line 583, in agent
+    return run_agent(
+           ^^^^^^^^^^
+  File "/Users/luthandomaqondo/miniconda3/lib/python3.11/site-packages/wandb/wandb_agent.py", line 528, in run_agent
+    agent.run()
+  File "/Users/luthandomaqondo/miniconda3/lib/python3.11/site-packages/wandb/wandb_agent.py", line 190, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/luthandomaqondo/miniconda3/lib/python3.11/site-packages/wandb/apis/internal.py", line 126, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/luthandomaqondo/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/Users/luthandomaqondo/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/luthandomaqondo/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 1065, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.CommError: Sweep luthando957/autovisual-dev-sweeps/34mung6u--count=10 not found
+
+2024-02-10 20:25:54 INFO Running runs: []
+2024-02-10 20:25:55 INFO Agent received command: run
+2024-02-10 20:25:55 INFO Agent starting run with config:
+	batch_size: 8
+	embed_dim: 512
+	experiment_num: 1
+	num_heads: 4
+	num_layers: 2
+2024-02-10 20:25:55 INFO About to run command: /usr/bin/env python scripts/training.py --batch_size=8 --embed_dim=512 --experiment_num=1 --num_heads=4 --num_layers=2
+2024-02-10 20:26:00 INFO Running runs: ['e2scsak3']
+2024-02-10 20:26:00 INFO Cleaning up finished run: e2scsak3
+2024-02-10 20:26:01 INFO Agent received command: run
+2024-02-10 20:26:01 INFO Agent starting run with config:
+	batch_size: 4
+	embed_dim: 256
+	experiment_num: 1
+	num_heads: 4
+	num_layers: 2
+2024-02-10 20:26:01 INFO About to run command: /usr/bin/env python scripts/training.py --batch_size=4 --embed_dim=256 --experiment_num=1 --num_heads=4 --num_layers=2
+2024-02-10 20:26:06 INFO Running runs: ['smaemz6v']
+2024-02-10 20:26:06 INFO Cleaning up finished run: smaemz6v
+2024-02-10 20:26:07 INFO Agent received command: run
+2024-02-10 20:26:07 INFO Agent starting run with config:
+	batch_size: 4
+	embed_dim: 256
+	experiment_num: 1
+	num_heads: 4
+	num_layers: 1
+2024-02-10 20:26:07 INFO About to run command: /usr/bin/env python scripts/training.py --batch_size=4 --embed_dim=256 --experiment_num=1 --num_heads=4 --num_layers=1
+2024-02-10 20:26:12 INFO Running runs: ['1czbjv84']
+2024-02-10 20:26:12 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-02-10 20:26:12 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true

@@ -1,0 +1,12 @@
+wandb_version: 1
+
+batch_size:
+  value: 8
+embed_dim:
+  value: 512
+experiment_num:
+  value: 1
+num_heads:
+  value: 4
+num_layers:
+  value: 2
